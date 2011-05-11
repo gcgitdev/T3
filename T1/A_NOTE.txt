@@ -1,5 +1,6 @@
 ezhuouy add line 1
 ouyzhu add line 2
+ouyzhu add line 3
 ezhuouy add line 3
 
 Background
@@ -13,8 +14,8 @@ Environment
 	
 Usage
 
-	properties		LoadPropertiesFromUtf8File			注意，这个类中读取了一个UTF-8编码格式的文件，这个类文件也需要用UTF-8的编码格式，否则不能正确读取中文。 （具体原因不详，JDK要求要这样？还是Eclipse的问题？）
-	reader			InputStreamReader_ReadUtf8File		注意，同上
+	properties		LoadPropertiesFromUtf8File			注�?，这个类中读�?�了一个UTF-8编�?格�?的文件，这个类文件也需�?用UTF-8的编�?格�?，�?�则�?能正确读�?�中文。 （具体原因�?详，JDK�?求�?这样？还是Eclipse的问题？）
+	reader			InputStreamReader_ReadUtf8File		注�?，�?�上
 	thread			showing how to create thread, by extends Thread, or by implement Runnable
 	javadoc			showing how to write java doc. View it in Javadoc view, or select "Project" -> "Generate Java doc",
 	threadLocal		showing threadLocal
