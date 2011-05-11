@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                         xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+                         xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+                         jxb:extensionBindingPrefixes="xjc"
+                         jxb:version="2.0">
+    <xs:annotation>
+        <xs:appinfo>
+            <jxb:globalBindings collectionType="java.util.ArrayList"/>
+            <jxb:schemaBindings>
+                <jxb:package name="jaxb.complex.schemaToJava.generated">
+                    <jxb:javadoc><![CDATA[<body> The package jaxb.complex.schemaToJava.generated contains the schema-derived classes which make up the object model used to process print client orders.</body>]]>
+                    </jxb:javadoc>
+                </jxb:package>
+            </jxb:schemaBindings>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="printOrder" type="PrintOrderType"/>
+    <xs:complexType name="PrintOrderType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:class name="PrintOrder">
+                    <jxb:javadoc><![CDATA[<code>PrintOrder</code> javadoc goes here]]>
+                    </jxb:javadoc>
+                </jxb:class>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="notifications" type="notificationsType" minOccurs="0">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <jxb:property name="printItems"/>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:long" use="required">
+            <xs:annotation>
+                <xs:appinfo>
+                    <jxb:property name="orderKey">
+                        <jxb:baseType>
+                            <xjc:javaType name="jaxb.complex.schemaToJava.print.PrintOrderKey"
+                              adapter="jaxb.complex.schemaToJava.print.IdAdapter"/>
+                        </jxb:baseType>
+                    </jxb:property>
+                </xs:appinfo>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="notificationsType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:class name="printItems">
+                    <jxb:javadoc><![CDATA[<code>PrintItems</code> javadoc goes here]]>
+                    </jxb:javadoc>
+                </jxb:class>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="appointments" minOccurs="0">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <jxb:property name="appointmentHolder"/>
+                    </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:appinfo>
+                            <jxb:class name="AppointmentHolder">
+                                <jxb:javadoc><![CDATA[<code>AppointmentHolder</code> javadoc goes here]]>
+                                </jxb:javadoc>
+                            </jxb:class>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="appointment" type="AppointmentType" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <jxb:property name="appointments"/>
+                                </xs:appinfo>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="birthdays" minOccurs="0">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <jxb:property name="birthdayHolder"/>
+                    </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:annotation>
+                        <xs:appinfo>
+                            <jxb:class name="BirthdayHolder">
+                                <jxb:javadoc><![CDATA[<code>BirthdayHolder</code> javadoc goes here]]>
+                                </jxb:javadoc>
+                            </jxb:class>
+                        </xs:appinfo>
+                    </xs:annotation>
+                    <xs:sequence>
+                        <xs:element name="birthday" type="BirthdayType" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <jxb:property name="birthdays"/>
+                                </xs:appinfo>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AppointmentType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:class name="Appointment">
+                    <jxb:javadoc><![CDATA[<code>Appointment</code> javadoc goes here]]>
+                    </jxb:javadoc>
+                </jxb:class>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="printItemType">
+                <xs:sequence>
+                    <xs:element name="apptType" type="ApptType"/>
+                    <xs:element name="apptDate" type="xs:dateTime">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <jxb:javaType name="java.lang.String"
+                                        parseMethod="jaxb.complex.schemaToJava.print.CustomDataTypeConverter.parseDateTimeToString"
+                                        printMethod="jaxb.complex.schemaToJava.print.CustomDataTypeConverter.printStringToDateTime"/>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="owner" type="OwnerType"/>
+                    <xs:element name="pet" type="PetType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="OwnerType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:class name="Owner">
+                    <jxb:javadoc><![CDATA[<code>Owner</code> javadoc goes here]]>
+                    </jxb:javadoc>
+                </jxb:class>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="address" type="AddressType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AddressType">
+        <xs:sequence>
+            <xs:element name="addressLine1" type="xs:string"/>
+            <xs:element name="addressLine2" type="xs:string" minOccurs="0"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="state" type="xs:string"/>
+            <xs:element name="zip" type="xs:string"/>
+            <xs:element name="zipExt" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PetType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:class name="Pet">
+                    <jxb:javadoc><![CDATA[<code>Pet</code> javadoc goes here]]>
+                    </jxb:javadoc>
+                </jxb:class>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="species" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BirthdayType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:class name="Birthday">
+                    <jxb:javadoc><![CDATA[<code>Birthday</code> javadoc goes here]]>
+                    </jxb:javadoc>
+                </jxb:class>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="printItemType">
+                <xs:sequence>
+                    <xs:element name="age" type="xs:int"/>
+                    <xs:element name="birthday" type="xs:dateTime">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <jxb:javaType name="java.lang.String"
+                                        parseMethod="jaxb.complex.schemaToJava.print.CustomDataTypeConverter.parseDateTimeToString"
+                                        printMethod="jaxb.complex.schemaToJava.print.CustomDataTypeConverter.printStringToDateTime"/>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="owner" type="OwnerType"/>
+                    <xs:element name="pet" type="PetType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:simpleType name="ApptType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:typesafeEnumClass/>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Yearly Checkup"/>
+            <xs:enumeration value="Well Mom Exam"/>
+            <xs:enumeration value="Teeth Cleaning"/>
+            <xs:enumeration value="Vaccination"/>
+            <xs:enumeration value="Senior Pet Checkup"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="printItemType">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:class ref="jaxb.complex.schemaToJava.print.PrintItem"/>
+            </xs:appinfo>
+        </xs:annotation>
+    </xs:complexType>
+</xs:schema>
+

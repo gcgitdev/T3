@@ -1,0 +1,12 @@
+<jxb:bindings version="2.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- specify the schema name and root schema node -->
+  <jxb:bindings schemaLocation="order.xsd" node="/xs:schema">
+
+    <!-- specify the schema node to which this customization should apply with an XPath expression -->
+    <jxb:bindings node="//xs:complexType[@name='AddressType']">
+        <jxb:class ref="jaxb.complex.schemaToJava.print.DomesticAddress"/>
+    </jxb:bindings> 
+
+  </jxb:bindings>
+</jxb:bindings>

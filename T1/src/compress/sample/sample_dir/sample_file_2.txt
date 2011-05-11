@@ -1,0 +1,37 @@
+FieldName	Type		Nullable	Description
+ID		Varchar2(32)	N		The unique identifier of list id. UUID is preferred.
+Name		Varchar2(200)	N		The readable name for this list.
+Owner		Varchar2(200)	N		
+ValidTo		Numeric		N		Expiry Time (the millisecond from 1970-1-1 00:00). If it is -1, it means never expire.
+ListType	Char(1)		N		＆B＊ 每 Black list.
+						＆W＊ 每 White list.
+						The default value is ＆B＊
+Status		Char(1)		N		＆0＊ 每 Inactive
+						＆1＊ 每 Active
+ElementType	Char(1)		N		The type of element in list. It can beㄩ
+						?	M (MDN/MSISDN)
+						?	S (SIP Address)
+						?	E (Email Address)
+						?	U (URL)
+						In this project, only ※M§ will be used. Meanwhile ※M§ is the default value of this field.
+						Default value is ※-1※
+Properties	Varchar2(1000)	Y
+	MaxSize		INT		Y		The maximum size of this list. It can be set by provision API as optional parameter. If it is not set in API, a system level configuration value will be used. 0 means no limit.
+
+
+-------------------------------------------------------------------------------------------------------------------------
+ListID		Varchar2(32)	N		The unique identifier of list id. Friend-Key to ListInfo.ID
+BindingID	Varchar2(200)	N		The unique id of object which bind with this list. For example, a list can be assigned to multiple service providers, applications, etc. 
+						A special ID ※GLOBAL§ indicts this list is a global list.
+Privilege	Char(1)		N		0x00 每 No any privilege
+						0x01 每 Read (Default value)
+						0x02 每 Write
+						0x04 每 Delete
+						0x08 每 Bind/unbind
+						0xFF 每 All
+Properties	Varchar2(1000)	Y
+	Creator
+
+
+-------------------------------------------------------------------------------------------------------------------------
+cascade delete on listName

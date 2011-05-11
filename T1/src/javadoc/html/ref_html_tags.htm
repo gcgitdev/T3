@@ -1,0 +1,3205 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD><TITLE>About HTML Tags</TITLE></HEAD>
+<BODY BGPROPERTIES="FIXED" BGCOLOR="#FFFFFF" LEFTMARGIN=0 TOPMARGIN=0>
+<P><FONT FACE="arial" SIZE=5>About HTML Tags</FONT><BR><HR><P><P><FONT FACE="arial" SIZE="2"><BLOCKQUOTE>
+<H1><A NAME="htmlref2_0000000001000000">About HTML Tags</A></H1>
+This document describes the HTML tags supported by Microsoft&#174; Internet Explorer 3.0. The document gives a description, examples and source specification for the tags. The <A HREF="htmlr000.htm">Reference</A> section lists all tags and provides complete details about the tags and their attributes. These sections group the tags functionally and provide overview information and more examples. 
+
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Category </B></FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Description
+</B></FONT></TD></TR>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="htmlr000.htm">Reference</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Alphabetical listing of all HTML tags.
+</FONT></TD></TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="index.htm">Index</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Alphabetical listing of all HTML tags and attributes.
+</FONT></TD></TR>
+
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001010000">Basics</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Lists the basic tags you need to create an HTML file.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001030000">Character Formatting</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Lists the different tags used to format fonts.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001050000">Images and Multimedia</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Learn how to use tags to embed video clips, sound, and marquees.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001040000">Color</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Lists the supported colornames and the tags which support these colornames.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001060000">Frames</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Includes the Internet Explorer 3.0 frame tags to create frames.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001070000">Lists</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Includes all of the tags which support different list types.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001080000">Tables</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Includes the Internet Explorer 3.0 table tag extensions to support HTML tables.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_00000000010a0000">Forms</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Includes tags which produces forms, form control types, and list boxes. 
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_0000000001090000">Image Maps</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">The most common use of image maps is to allow users to access different documents by clicking different areas in an image. 
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_00000000010b0000">Objects</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Lists the tags to embed ActiveX controls. 
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_00000000010c0000">Client Pull</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Client pull provides the ability to automatically load a new document in the specified time or reload a document on a regular basis.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_00000000010d0000">Character Set</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ISO Latin-1 and complete character sets for English (US) you can represent in HTML.
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><A HREF="#htmlref2_00000000010e0000">Compatibility</A>
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Lists the supported tags and attributes and identifies the HTML specifications and HTML viewers that they are compatible with.
+</FONT></TD></TR></TABLE>
+<H2><A NAME="htmlref2_0000000001010000">Basics</A></H2>
+<P>An HTML document is a text file that contains the elements that Internet Explorer uses to format a document, to display multimedia objects, and to create hyperlinks. 
+
+<P>An HTML document file contains many elements. An element consists of a start-tag, an-end tag and the data characters enclosed by the two tags. A <I>tag</I> defines a format to apply or an action to take. An element can have one or more attributes and values. A tag starts with a less than (&lt;) sign and ends with a greater than (&gt;) sign. Tag and attribute names are not case-sensitive, but are typically written in uppercase to distinguish them from the data characters.
+
+<P>An end-tag consists of the tag name immediately preceded by a slash (/). Some tags require that you always provide the matching end-tag; others allow you to omit the end tag if the result is clear and unambiguous.
+
+<P>This is a very simple HTML document:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;Simple HTML Document&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;P&gt;A very simple HTML document.
+&lt;/BODY&gt;
+&lt;/HTML&gt; 
+</FONT></PRE>
+<P>An HTML document starts with an <A HREF="htmlr000.htm#htmlref2_0000000002002000">HTML</A> tag. This marks the file as an HTML document. The matching end tag (&lt;/HTML&gt;) is the last tag in the file. The <A HREF="htmlr000.htm#htmlref2_0000000002001e00">HEAD</A> tag marks beginning of the document header. Typically, the <A HREF="htmlr000.htm#htmlref2_0000000002004400">TITLE</A> element appears here. Internet Explorer displays this element in its title bar. 
+
+<P>The <A HREF="htmlr000.htm#htmlref2_0000000002000a00">BODY</A> tag appears at the start of the content of the document. The BODY element encloses the body text, images, and multimedia objects. The <A HREF="htmlr000.htm#htmlref2_0000000002003100">P</A> element adds a new paragraph with a carriage return and line feed. The ending <A HREF="htmlr000.htm#htmlref2_0000000002003100">P</A> tag is typically omitted, meaning the scope of the tag extends to the next tag that affects paragraphs (in this case, the &lt;/BODY&gt; tag).
+
+<P>HTML supports hyperlinks. The A element, or anchor, maps text or a graphic to another document or to a location within the current document. A hyperlink is defined by a clickable "hotspot" (the text or an image) and a reference. To create a hyperlink, you enclose the text or image with the anchor tags, and set the HREF= attribute to the destination address, as in the following:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;P&gt;Click &lt;A HREF="//www.microsoft.com/"&gt;here&lt;/A&gt; to visit the Microsoft web site.
+</FONT></PRE>
+<P>In this example, the address for the Web site is enclosed in double quotation marks. The double quotation marks are optional unless the attribute value contains any spaces. If you enclose an value that contains double quotation marks, use &amp;QUOT; for each occurrence of the mark within the value. 
+
+<P>You can create a hyperlink destination (an anchor spot) within your HTML document by using the NAME= attribute. Use the <A HREF="htmlr000.htm#htmlref2_0000000002000100">A</A> tag to relate text or a graphic to a name that you create. This lets you create hyperlinks that jump to locations within your document rather than to other documents. The following example creates a destination (named <I>using</I>) and shows how to create a hyperlink to that destination:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;A NAME="using"&gt;&lt;/A&gt;&lt;H2&gt;Using Internet Explorer 3.0&lt;/H2&gt;
+
+...
+
+&lt;P&gt;For more information, see &lt;A HREF="#using"&gt;Using Internet Explorer 3.0&lt;/A&gt;
+</FONT></PRE>
+<P><B>Note</B>  Although Internet Explorer can display incomplete or improperly tagged files, the result is often not what you may have intended. You should always use the tags carefully, using them only in the context in which they are defined to be used and omitting end tags only if defined as optional. 
+<H2><A NAME="htmlref2_0000000001020000">Sections and Paragraphs</A></H2>
+<P>The typical HTML document consists of one or more text paragraphs organized into sections. You can mark the beginning of the sections in your HTML documents by using the <A HREF="htmlr000.htm#htmlref2_0000000002001d00">H</A> tags. These tags create section headings, applying changes to the size and style of the text in the heading to indicate the section level. The following example creates a first level section heading:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;H1&gt;Welcome to Internet Explorer!&lt;/H1&gt; 
+</FONT></PRE>
+<P>The <A HREF="htmlr000.htm#htmlref2_0000000002001d00">H</A> allows for seven levels; you specify the level by using the tag name that includes that level number (H1, H2, H3, and so on). The end tag is always required; it marks the end of the section heading.
+
+<P>By default, section headings are left-aligned. You can override the default alignment and center the heading by using the <A HREF="htmlr000.htm#htmlref2_0000000002001d01">ALIGN=</A> attribute, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;H2 ALIGN=CENTER&gt;How to Use Internet Explorer&lt;/H2&gt; 
+</FONT></PRE>
+<P>In addition to using the <A HREF="htmlr000.htm#htmlref2_0000000002003100">P</A> tag to create simple paragraphs, you can use tags, such as <A HREF="htmlr000.htm#htmlref2_0000000002000900">BLOCKQUOTE</A>, <A HREF="htmlr000.htm#htmlref2_0000000002002700">LISTING</A>, <A HREF="htmlr000.htm#htmlref2_0000000002003300">PLAINTEXT</A>, <A HREF="htmlr000.htm#htmlref2_0000000002003400">PRE</A> and <A HREF="htmlr000.htm#htmlref2_0000000002004b00">XMP</A>, to create paragraphs that use a different size and style for the text. For example, you can use the <A HREF="htmlr000.htm#htmlref2_0000000002003400">PRE</A> tag to display characters in a fixed-width font rather than the variable-width font used for simple paragraphs, or the <A HREF="htmlr000.htm#htmlref2_0000000002000900">BLOCKQUOTE</A> tag to slightly indent the paragraph text (from both the left and right margins) to make the paragraph stand out. 
+
+<P>You can apply a style to a sequence of paragraphs (for example, those tagged with <A HREF="htmlr000.htm#htmlref2_0000000002003100">P</A>) by enclosing the paragraphs with a <A HREF="htmlr000.htm#htmlref2_0000000002000200">ADDRESS</A>, <A HREF="htmlr000.htm#htmlref2_0000000002000900">BLOCKQUOTE</A>, or <A HREF="htmlr000.htm#htmlref2_0000000002000d00">CENTER</A> tag. The following example shows how to center a sequence of simple paragraphs:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;CENTER&gt;
+&lt;P&gt;This paragraph is centered.
+
+&lt;P&gt;And this paragraph is centered too.
+&lt;/CENTER&gt;
+</FONT></PRE>
+<P>An alternate way to center individual paragraphs is to use the <A HREF="htmlr000.htm#htmlref2_0000000002003101">ALIGN=</A> attribute with the <A HREF="htmlr000.htm#htmlref2_0000000002003100">P</A> tag and set the attribute value to CENTER, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;P ALIGN=CENTER&gt;This paragraph is centered.
+</FONT></PRE>
+<H2><A NAME="htmlref2_0000000001030000">Character Formatting</A></H2>
+<P>You can use a variety of tags to set the size and style of the text characters. For example, you can use the <A HREF="htmlr000.htm#htmlref2_0000000002000400">B</A> or <A HREF="htmlr000.htm#htmlref2_0000000002003a00">STRONG</A> tag to make text bold, and the <A HREF="htmlr000.htm#htmlref2_0000000002002100">I</A> or <A HREF="htmlr000.htm#htmlref2_0000000002001800">EM</A> tag to make text italic. Similarly, you can use the <A HREF="htmlr000.htm#htmlref2_0000000002003500">S</A> or <A HREF="htmlr000.htm#htmlref2_0000000002003900">STRIKE</A> tag to strike out text, and the <A HREF="htmlr000.htm#htmlref2_0000000002004700">U</A> tag to underline text. The following example sets words and phrases in paragraphs to bold and italic:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;P&gt;This &lt;B&gt;word&lt;/B&gt; is bold; this &lt;I&gt;word&lt;/I&gt; is italic. 
+
+&lt;P&gt;&lt;STRONG&gt;This phrase is bold&lt;/STRONG&gt;; &lt;EM&gt;this is italic&lt;/EM&gt;.
+</FONT></PRE>
+<P>You can apply character formatting to a sequence of paragraphs (for example, those tagged with <A HREF="htmlr000.htm#htmlref2_0000000002003100">P</A>) by enclosing the paragraphs with a character formatting tag. For example, to make all the text in a sequence of paragraphs bold, do the following:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;B&gt;
+&lt;P&gt;This text is bold.
+
+&lt;P&gt;And this text is bold too.
+&lt;/B&gt;
+</FONT></PRE>
+<P>Although you can use this technique with simple paragraphs, some tags "block" the effect of the character formatting tags. For example, you can not make all the text in a table bold by enclosing it in a <A HREF="htmlr000.htm#htmlref2_0000000002000400">B</A> tag. 
+
+<P>You can create superscripts and subscripts by using the <A HREF="htmlr000.htm#htmlref2_0000000002003c00">SUP</A> and <A HREF="htmlr000.htm#htmlref2_0000000002003b00">SUB</A> tags. These tags reduce the size of the text and align it at the top or bottom of the current line of text. 
+
+<P>You can change the size of the text by using tags such as <A HREF="htmlr000.htm#htmlref2_0000000002000800">BIG</A> and <A HREF="htmlr000.htm#htmlref2_0000000002003800">SMALL</A>, or by using the <A HREF="htmlr000.htm#htmlref2_0000000002001901">SIZE=</A> attribute with the <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A> tag. The following example increases the size of the word "LARGE" and reduces the word "TINY":
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;P&gt;Use the &lt;BIG&gt;LARGE&lt;/BIG&gt; machine for business, the &lt;SMALL&gt;TINY&lt;/SMALL&gt; machine for personal items.
+</FONT></PRE>
+<P>If you use the <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A> tag to change text size, you can specify either a fixed or relative size. A fixed size is a number in the range 1 through 7. A relative size is a positive or negative number, preceded by the plus (+) or minus (-) sign, that indicates a size that is relative to the base font size, as set using the <A HREF="htmlr000.htm#htmlref2_0000000002000600">BASEFONT</A> tag. The following example shows the effect of using relative sizes: 
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;BASEFONT SIZE=3&gt; This sets the base font size to 3.
+&lt;FONT SIZE=+4&gt; Now the font size is 7.
+&lt;FONT SIZE=-1&gt; Now the font size is 2.
+</FONT></PRE>
+<P>You can also use the <A HREF="htmlr000.htm#htmlref2_0000000002001903">FACE=</A> attribute with the <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A> tag to set the facename of the font used for text. Typical facenames are "Arial", "Times New Roman", and "Courier New", but you can use the facename of any font installed on the device on which your HTML document is viewed. The following example sets the "Arial" font for the text in the section heading:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;H1&gt;&lt;FONT FACE="ARIAL"&gt;Welcome to Internet Explorer!&lt;/FONT&gt;&lt;/H1&gt; 
+</FONT></PRE>
+<P>If the given font is not available, Internet Explorer uses a default font. To increase the chances that a font of your choice is applied to the text, you can specify more than one facename in a <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A> tag. In this case, Internet Explorer checks for each font (in the order given) before using to the default font. In the following example, Internet Explorer checks for "Arial", "Lucida Sans", and "Times Roman" before resorting to the default font:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;FONT FACE="Arial,Lucida Sans,Times Roman"&gt; This text will be in either Arial, Lucida Sans, or Times Roman, depending on which fonts you have installed on your system.&lt;/FONT&gt; 
+</FONT></PRE>
+<P>You can apply size and font changes to a sequence of paragraphs by enclosing the paragraphs with the <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A> tag. As with other character formatting tags, some tags "block" the effect of the <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A>, so this technique may not work for all paragraphs. For example, table tags accept font facename changes but block size changes. 
+
+<H2><A NAME="htmlref2_0000000001040000">Color</A></H2>
+<P>You can set colors in your HTML document by using the color attributes of the <A HREF="htmlr000.htm#htmlref2_0000000002000a00">BODY</A>, <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A>, <A HREF="htmlr000.htm#htmlref2_0000000002001f00">HR</A>, <A HREF="htmlr000.htm#htmlref2_0000000002002900">MARQUEE</A>, and <A HREF="htmlr000.htm#htmlref2_0000000002003d00">TABLE</A> tags. For example, you can set background color for your document by using the <A HREF="htmlr000.htm#htmlref2_0000000002000a02">BGCOLOR=</A> attribute with the <A HREF="htmlr000.htm#htmlref2_0000000002000a00">BODY</A> tag as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;BODY BGCOLOR=WHITE&gt;
+&lt;P&gt;This page has a white background.
+&lt;/BODY&gt;
+</FONT></PRE>
+<P>You can specify colors in two ways: by using a predefined color name (as in the example above), or by using a hexadecimal number to denote a red-green-blue color value. 
+
+<P>Internet Explorer supports the following predefined color names:
+
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">AQUA
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BLACK
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BLUE
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FUCHSIA
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">GRAY
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">GREEN
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LIME
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MAROON
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NAVY
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">OLIVE
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">PURPLE
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">RED
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SILVER
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TEAL
+</FONT></TD></TR><TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">WHITE
+ </FONT></TD><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">YELLOW
+</FONT></TD></TR></TABLE>
+<P><B>Note</B>  This feature is not compatible with Netscape v2.0.<P>A red-green-blue color value consists of three byte values, with each value specifying the intensity of the corresponding color. For example, the color value #00FF0000 is red because the red value is set to full intensity and green and blue are set to zero. Similary, #0000FF00 is green and #000000FF is blue. When forming a color value, you can use an optional number (#) sign and leading zeros to help make the value as a number. The following example sets the color of a horizontal rule to red:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;HR COLOR=#00FF0000&gt; 
+</FONT></PRE>
+<P>Although red-green-blue color values theoretically allow for many thousands of colors, the actual number of colors available for your HTML document depends on the color capabilities of the devices the document will be viewed on. Always choose colors carefully, and whenever possible test the results of your color choices on a variety of devices. 
+
+<H2><A NAME="htmlref2_0000000001050000">Images and Multimedia</A></H2>
+<P>You can embed images, sounds, and even video clips in your HTML document by using the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> and <A HREF="htmlr000.htm#htmlref2_0000000002000700">BGSOUND</A> tags. And you can apply simple animation to text by using the <A HREF="htmlr000.htm#htmlref2_0000000002002900">MARQUEE</A> tag. 
+
+<P>You use the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> to insert images into your document. You specify the image source, typically a GIF or JPEG file, and specify the image attributes, such as the width and height, alignment, and so on. The following example inserts the image of the earth:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;IMG SRC="TheEarth.gif" WIDTH=46 HEIGHT=46 ALT="Picture of the Earth"&gt; 
+</FONT></PRE>
+<P>The <A HREF="htmlr000.htm#htmlref2_000000000200220a">SRC=</A> attribute specifies the name of the image file, and the <A HREF="htmlr000.htm#htmlref2_0000000002002202">ALT=</A> attribute specifies the text to be displayed if the user chooses not to view images. 
+
+<P>When you place an <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> tag in text, Internet Explorer aligns the surrounding text with the bottom of the image. You can align the text with the top or middle of the image by using the <A HREF="htmlr000.htm#htmlref2_0000000002002201">ALIGN=</A> attribute to set the alignment to TOP or MIDDLE. In this case, the image keeps its position within the surronding text.
+
+<P>You can also use the <A HREF="htmlr000.htm#htmlref2_0000000002002201">ALIGN=</A> attribute to have the text flow around the image. For example, setting this attribute to LEFT aligns the image with the left margin and wraps all subsequent text around the right side of the image. Similarly, setting it to RIGHT wraps all subsequent text around the left side. When you use the LEFT or RIGHT alignment, typically it is useful to also use the <A HREF="htmlr000.htm#htmlref2_0000000002000b00">BR</A> tag with the <A HREF="htmlr000.htm#htmlref2_0000000002000b01">CLEAR=</A> attribute to stop wrapping and force all remaining text below the image, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;IMG SRC="TheEarth.gif" ALIGN=LEFT&gt; Here's some text to the right of a picture.
+&lt;BR CLEAR=LEFT&gt;Here's some text beneath the picture. 
+</FONT></PRE>
+<P>You can also use the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> tag to insert video clips, such as .avi (Audio Video Interleave) video files, in your document. You specify the name of the clip by using the <A HREF="htmlr000.htm#htmlref2_0000000002002205">DYNSRC=</A> attribute, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;IMG DYNSRC="TheEarth.avi" SRC="TheEarth.gif" WIDTH=46 HEIGHT=46 LOOP=INFINITE ALIGN=RIGHT&gt;
+</FONT></PRE>
+<P>The <A HREF="htmlr000.htm#htmlref2_0000000002002209">LOOP=</A> attribute specifies how often the video clip plays. In this example, the clip plays continuously. You can also use attributes such as <A HREF="htmlr000.htm#htmlref2_0000000002002204">CONTROLS</A> and <A HREF="htmlr000.htm#htmlref2_000000000200220b">START=</A> to give the user some control over when and how the clip plays. Notice that the <A HREF="htmlr000.htm#htmlref2_000000000200220a">SRC=</A> attribute is given. This ensures that Internet Explorer displays an image even if the given video clip is not available.
+
+<P>You can use an image as a hotspot for a hyperlink by enclosing the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> tag with the <A HREF="htmlr000.htm#htmlref2_0000000002000100">A</A> tag. By default, Internet Explorer draws a border around the image to mark it as a hotspot, but you can prevent this border by setting the <A HREF="htmlr000.htm#htmlref2_0000000002002203">BORDER=</A> attribute in the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> tag to zero. 
+
+<P>You can add background sounds or music to your document by using the <A HREF="htmlr000.htm#htmlref2_0000000002000700">BGSOUND</A> tag. You specify the address of a sound file, such as a .WAV, .AU, or MIDI file, and use the <A HREF="htmlr000.htm#htmlref2_0000000002000702">LOOP=</A> attribute to set how often the file plays, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;BGSOUND SRC="boing.wav" LOOP=5&gt;You will hear a boinging noise five times in a row.
+</FONT></PRE>
+<P>You can animate a line of text by using the <A HREF="htmlr000.htm#htmlref2_0000000002002900">MARQUEE</A> tag. The tag automatically scrolls the text, to the left or right, whenever a user views your document. To animate the text, you enclose it in the tag and set attributes for scroll direction, type and amount, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;MARQUEE DIRECTION=RIGHT BEHAVIOR=SCROLL SCROLLAMOUNT=10 SCROLLDELAY=200&gt;This is a scrolling marquee.&lt;/MARQUEE&gt; 
+</FONT></PRE>
+<P>In this example, the text "This is a scrolling marquee." scrolls from the left margin to the right. After it disappears beyond the right margin, it starts again at the left. The text moves 10 pixels after each 200 millisecond delay. 
+
+<P>You can align marquees to the left or right, like images, and also set the background color, height, width, and extra spacing around the marquee.
+
+<H2><A NAME="htmlref2_0000000001060000">Frames</A></H2>
+<P>Frames give you a unique way to organize and structure your HTML documents, letting you create compound documents that the user can view within the main window of Internet Explorer. To use frames, you create a document that uses the <A HREF="htmlr000.htm#htmlref2_0000000002001c00">FRAMESET</A> and <A HREF="htmlr000.htm#htmlref2_0000000002001b00">FRAME</A> tags to divide the main window into rectangular frames (like panes in a window). Then for each frame, you specify an HTML document that contains the content (text and images) to fill the frame. 
+
+For example, you can split the main window into two equal frames and fill these with different documents by using the following tags:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;Two Equal Frames&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;FRAMESET COLS="50%,*"&gt;
+&lt;FRAME SRC=x.htm&gt;
+&lt;FRAME SRC=y.htm&gt;
+&lt;/FRAMESET&gt;
+&lt;/HTML&gt;
+</FONT></PRE>
+<P>In this example, the <A HREF="htmlr000.htm#htmlref2_0000000002001c01">COLS=</A> attribute in the <A HREF="htmlr000.htm#htmlref2_0000000002001c00">FRAMESET</A> tag specifies the width of the frames. The width of the first frame is 50% of the main window, and width of the second, given as an asterisk, is relative to the first (meaning it spans whateven is left of the main window). Note that this document does not contain a <A HREF="htmlr000.htm#htmlref2_0000000002000a00">BODY</A> tag. This is because documents that define frames do not contain content. Instead, the <A HREF="htmlr000.htm#htmlref2_0000000002001b08">SRC=</A> attribute in each <A HREF="htmlr000.htm#htmlref2_0000000002001b00">FRAME</A> tag specifies a document. In this example, the X.HTM and Y.HTM files provide the content. 
+
+<P>You can divide the main window into rows, as well as columns, by using the <A HREF="htmlr000.htm#htmlref2_0000000002001c04">ROWS=</A> attribute. Furthermore, you can independently divide individual rows into rows and columns by nesting <A HREF="htmlr000.htm#htmlref2_0000000002001c00">FRAMESET</A> tags. The following example shows how to divide the main window into two rows in which the last row is divided into two columns:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;Nested Frames&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;FRAMESET ROWS="10%,*"&gt;
+&lt;FRAME SCROLLING=NO SRC=z.htm&gt;
+&lt;FRAMESET COLS="50%,*"&gt;
+&lt;FRAME SRC=x.htm&gt;
+&lt;FRAME SRC=y.htm&gt;
+&lt;/FRAMESET&gt;
+&lt;/FRAMESET&gt;
+&lt;/HTML&gt;
+</FONT></PRE>
+<P>In this example, the <A HREF="htmlr000.htm#htmlref2_0000000002001b07">SCROLLING=</A> attribute is used in the first <A HREF="htmlr000.htm#htmlref2_0000000002001b00">FRAME</A> tag to prevent the scroll bar from being displayed. By default, Internet Explorer displays the scroll bar only if the entire content of the frame does not fit within the frame. Setting <A HREF="htmlr000.htm#htmlref2_0000000002001b07">SCROLLING=</A> to NO always prevents the scroll bar.
+
+<P>The <A HREF="htmlr000.htm#htmlref2_0000000002001b00">FRAME</A> tag has attributes to let you can set the width and height of margins within the frame and whether the frame has a border. The <A HREF="htmlr000.htm#htmlref2_0000000002001c00">FRAMESET</A> tag has attributes to let you set the spacing between frames and whether the frames in the set have borders. 
+
+<P>An important feature of the <A HREF="htmlr000.htm#htmlref2_0000000002001b00">FRAME</A> tag is the <A HREF="htmlr000.htm#htmlref2_0000000002001b05">NAME=</A> attribute. This attribute lets you assign a unique name to the frame, and you can use this name when creating hyperlinks to direct documents into the frame. To create such a hyperlink, you need to use the <A HREF="htmlr000.htm#htmlref2_0000000002000103">TARGET=</A> attribute in the <A HREF="htmlr000.htm#htmlref2_0000000002000100">A</A> command. For example, the following tag creates a hyperlink that displays the X.HTM file in a frame named CONTENT:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;A HREF="x.htm" TARGET="CONTENT"&gt;List of Components&lt;/A&gt;
+</FONT></PRE>
+<P>Internet Explorer provides an alternate way to create compound documents by letting you place <A HREF="htmlr000.htm#htmlref2_0000000002001b00">FRAME</A> tags in your HTML document. This lets you insert HTML documents into your document in the same way you insert images using the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> tag. This means you can use the <A HREF="htmlr000.htm#htmlref2_0000000002001b01">ALIGN=</A> attribute to just as you do with <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> to align the frame with the surrounding text. The following example aligns a frame at the left margin and wraps subsequent text around the right side of the frame:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;FRAME SRC="x.htm" ALIGN=LEFT&gt; Here's some text to the right of a frame.
+&lt;BR CLEAR=LEFT&gt;Here's some text beneath the frame. 
+</FONT></PRE>
+<H2><A NAME="htmlref2_0000000001070000">Lists</A></H2>
+<P>You can create a variety of lists in your document by using the <A HREF="htmlr000.htm#htmlref2_0000000002004800">UL</A>, <A HREF="htmlr000.htm#htmlref2_0000000002002f00">OL</A>, <A HREF="htmlr000.htm#htmlref2_0000000002002a00">MENU</A>, and <A HREF="htmlr000.htm#htmlref2_0000000002001500">DIR</A> tags in conjunction with the <A HREF="htmlr000.htm#htmlref2_0000000002002600">LI</A> tag. You can also create definition lists which give you a simple two column list for terms and their definitions.
+
+<P>For example, you can create a bulleted list, consisting of individual items preceded by a bullet character, by using <A HREF="htmlr000.htm#htmlref2_0000000002004800">UL</A> and <A HREF="htmlr000.htm#htmlref2_0000000002002600">LI</A>, as in the following example: 
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;UL&gt;
+&lt;LI&gt;Bulleted Lists
+&lt;LI&gt;Ordered Lists
+&lt;LI&gt;Directory Lists
+&lt;LI&gt;Itemized Lists
+&lt;LI&gt;Definition Lists
+&lt;/UL&gt;
+</FONT></PRE>
+<P>You use the <A HREF="htmlr000.htm#htmlref2_0000000002002f00">OL</A> and <A HREF="htmlr000.htm#htmlref2_0000000002002600">LI</A> tags to create an ordered list. The list consists of individual items that are sequentially numbered or lettered. To set the style of numbering or lettering, you use the <A HREF="htmlr000.htm#htmlref2_0000000002002f02">TYPE=</A> attribute in <A HREF="htmlr000.htm#htmlref2_0000000002002f00">OL</A>. Similarly, you use the <A HREF="htmlr000.htm#htmlref2_0000000002002f01">START=</A> attribute to set the initial number or letter. By default, the style is decimal numbers starting at 1.
+
+<P>The <A HREF="htmlr000.htm#htmlref2_0000000002001500">DIR</A> and <A HREF="htmlr000.htm#htmlref2_0000000002002600">LI</A> tags create a directory list, consisting of individual items, none containing more than 20 characters, displayed in columns. The <A HREF="htmlr000.htm#htmlref2_0000000002002a00">MENU</A> and <A HREF="htmlr000.htm#htmlref2_0000000002002600">LI</A> tags create an itemized list consisting of individual items. 
+
+<P>A definition list is an automatically formatted two-column list with terms on the left and their definitions on the right. You use the <A HREF="htmlr000.htm#htmlref2_0000000002001600">DL</A>, <A HREF="htmlr000.htm#htmlref2_0000000002001700">DT</A> and <A HREF="htmlr000.htm#htmlref2_0000000002001300">DD</A> tags to create definition lists. The following example shows how to use these tags to create a list: 
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;DL&gt;
+&lt;DT&gt;Cat
+&lt;DD&gt;A furry cute animal that purrs and likes milk.
+&lt;DT&gt;Lizard
+&lt;DD&gt;A weird desert animal with a long tongue.
+&lt;/DL&gt; 
+</FONT></PRE>
+<H2><A NAME="htmlref2_0000000001080000">Tables</A></H2>
+<P>Tables let you organize and present information in rows and columns. You use the <A HREF="htmlr000.htm#htmlref2_0000000002003d00">TABLE</A> tag to create the table, and the <A HREF="htmlr000.htm#htmlref2_0000000002004500">TR</A> and <A HREF="htmlr000.htm#htmlref2_0000000002003f00">TD</A> tags to create the rows and cells of the table. The individual cells are where you place the information of the table, whether it be text or images. The following example shows a simple table consisting of two rows and two columns (four cells):
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;TABLE&gt;
+&lt;TR&gt;
+&lt;TD&gt;Apples&lt;TD&gt;Celery
+&lt;TR&gt;
+&lt;TD&gt;Oranges&lt;TD&gt;Carrots
+&lt;/TABLE&gt;
+</FONT></PRE>
+<P>By default, Internet Explorer places the left side of the table at the left margin of the window and sets the width of the table to be just enough to clearly display the text and images in the cells. Also, it places the content of each cell in the middle and left edge of the cell.
+
+<P>You can override these defaults by specifying attributes. For example, you can set the width of the table by using the <A HREF="htmlr000.htm#htmlref2_0000000002003d0b">WIDTH=</A> attribute in the <A HREF="htmlr000.htm#htmlref2_0000000002003d00">TABLE</A> table. Similarly, you can align the content of each cell to the top, left, right, or bottom of a cell by using the <A HREF="htmlr000.htm#htmlref2_0000000002004501">ALIGN=</A> and <A HREF="htmlr000.htm#htmlref2_0000000002004507">VALIGN=</A> attributes in <A HREF="htmlr000.htm#htmlref2_0000000002004500">TR</A> or <A HREF="htmlr000.htm#htmlref2_0000000002003f00">TD</A>. The following example creates a table that is the full width of the window and in which the contents of each cell are aligned at the top-left of the cell:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;TABLE WIDTH=100%&gt;
+&lt;TR VALIGN=TOP ALIGN=LEFT&gt;
+&lt;TD&gt;Apples&lt;TD&gt;Celery
+&lt;TR VALIGN=TOP ALIGN=LEFT&gt;
+&lt;TD&gt;Oranges&lt;TD&gt;Carrots
+&lt;/TABLE&gt;
+</FONT></PRE>
+<P>In this example, the table width is given as a percentage of the total Internet Explorer window width. But you can also specify table widths in pixels. 
+
+<P>You can add a caption, row and column headings, and a border to a table by using tags and attributes. For example, you can add a caption to a table by using the <A HREF="htmlr000.htm#htmlref2_0000000002000c00">CAPTION</A> tag. By default, the caption is centered above the table, but you can use the <A HREF="htmlr000.htm#htmlref2_0000000002000c01">ALIGN=</A> attribute to place the caption at the top or bottom and at the left or right edge of the table.
+
+<P>To add headings to the rows and columns of a table, you use the <A HREF="htmlr000.htm#htmlref2_0000000002004200">TH</A> tag. This tag is like the <A HREF="htmlr000.htm#htmlref2_0000000002003f00">TD</A> tag in that it creates a cell and can contain text and images, but it automatically emphasizes its text to distinguish it from text in other cells. To draw a border around the table and the individual cells, you use the <A HREF="htmlr000.htm#htmlref2_0000000002003d04">BORDER=</A> attribute in the <A HREF="htmlr000.htm#htmlref2_0000000002003d00">TABLE</A> tag. You specify the border width in pixels. The following example creates a table with headings, border, and a caption:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;TABLE BORDER=1&gt;
+&lt;CAPTION&gt;Fruits and Vegetables&lt;/CAPTION&gt;
+&lt;TR&gt;
+&lt;TH&gt;Fruits&lt;TH&gt;Vegetables
+&lt;TR&gt;
+&lt;TD&gt;Apples&lt;TD&gt;Celery
+&lt;TR&gt;
+&lt;TD&gt;Oranges&lt;TD&gt;Carrots
+&lt;/TABLE&gt;
+</FONT></PRE>
+<P>By default, Internet Explorer centers headings in the cell, but you can override this by using the <A HREF="htmlr000.htm#htmlref2_0000000002004201">ALIGN=</A> and <A HREF="htmlr000.htm#htmlref2_000000000200420a">VALIGN=</A> attributes.
+
+<P>You can add color to your tables by using the <A HREF="htmlr000.htm#htmlref2_0000000002003d03">BGCOLOR=</A> and <A HREF="htmlr000.htm#htmlref2_0000000002003d05">BORDERCOLOR=</A> attributes. These attributes are available in the <A HREF="htmlr000.htm#htmlref2_0000000002003d00">TABLE</A>, <A HREF="htmlr000.htm#htmlref2_0000000002004500">TR</A>, and <A HREF="htmlr000.htm#htmlref2_0000000002003f00">TD</A> tags, so you can apply colors to all cells in a table, to cells in selected rows, or to individual cells. The <A HREF="htmlr000.htm#htmlref2_0000000002003d03">BGCOLOR=</A> attribute sets the color used to fill the background of the cell before text and images are drawn. The <A HREF="htmlr000.htm#htmlref2_0000000002003d05">BORDERCOLOR=</A> attribute sets the color of the borders drawn around the table, row, or cell. The following example uses the same background color for the column headings, but different colors for the two columns in the table:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;TABLE BORDERCOLOR=NAVY BORDER=1&gt;
+&lt;CAPTION&gt;Fruits and Vegetables&lt;/CAPTION&gt;
+&lt;TR BGCOLOR=GRAY&gt;
+&lt;TH&gt;Fruits&lt;TH&gt;Vegetables
+&lt;TR&gt;
+&lt;TD BGCOLOR=LIME&gt;Apples&lt;TD BGCOLOR=AQUA&gt;Celery
+&lt;TR&gt;
+&lt;TD BGCOLOR=LIME&gt;Oranges&lt;TD BGCOLOR=AQUA&gt;Carrots
+&lt;/TABLE&gt;
+</FONT></PRE>
+<P>You can change the character formatting for the text in a table by using the tags such as <A HREF="htmlr000.htm#htmlref2_0000000002000400">B</A>, <A HREF="htmlr000.htm#htmlref2_0000000002002100">I</A>, and <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A>. You can change the color and font facename for all text in a table by enclosing the table in an appropriate <A HREF="htmlr000.htm#htmlref2_0000000002001900">FONT</A> tag, but the table tags block the effect of other character formatting tags. To get these effects, you must apply the tags within each cell. 
+
+<P>Within a cell, you can use most of the tags that you ordinarily use in body of the HTML document, including tags for section headings, lists, and even other tables. Using tables in this way can give you additional control over the placement of text and images when your document is displayed, but can also make the management of your document more complex. For example, you can use tables to give your document a two-column layout by nesting a single-column table in each cell of a two-column table. But if you do this, you must take special care to divide the content of your document equally between the two nested tables and be prepared to account for differences in the size of the window through which users view your document. In most cases, documents that use tables in this way are designed to be viewed within a minimum window size at a given screen resolution.
+
+<P>If you use tables in the more traditional way (that is, presenting information in rows and columns), there are some additional tags and attributes that can make that job easier. The <A HREF="htmlr000.htm#htmlref2_0000000002004300">THEAD</A>, <A HREF="htmlr000.htm#htmlref2_0000000002003e00">TBODY</A> and <A HREF="htmlr000.htm#htmlref2_0000000002004100">TFOOT</A> tags let you divide your tables into parts: header, body, and footer. The <A HREF="htmlr000.htm#htmlref2_0000000002001100">COLGROUP</A> and <A HREF="htmlr000.htm#htmlref2_0000000002001000">COL</A> tags let you group columns within the table and globally apply properties, such as alignment, to the columns without having to specify these properties in each <A HREF="htmlr000.htm#htmlref2_0000000002003f00">TD</A> tag. 
+
+<P>The <A HREF="htmlr000.htm#htmlref2_0000000002003d0c">FRAME=</A> and <A HREF="htmlr000.htm#htmlref2_0000000002003d0d">RULES=</A> attributes in the <A HREF="htmlr000.htm#htmlref2_0000000002003d00">TABLE</A> tag let you control how the table border is drawn. For example, you can choose to have no border around the outside of the table while restricting the border inside the table to just vertical rules separating the columns and horizontal rules separating the table header, body, and footer. The <A HREF="htmlr000.htm#htmlref2_0000000002004207">COLSPAN=</A> and <A HREF="htmlr000.htm#htmlref2_0000000002004209">ROWSPAN=</A> attributes in the <A HREF="htmlr000.htm#htmlref2_0000000002003f00">TD</A> and <A HREF="htmlr000.htm#htmlref2_0000000002004200">TH</A> tags let you extend the content of a cell into adjoining cells. This is useful, for example, if you need to stretch a column heading across more than one column. 
+
+<P>The following example shows how some of these tags and attributes can be used in a table:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;TABLE WIDTH=50% BORDER=1 FRAME=BOX RULES=GROUPS&gt;
+&lt;COLGROUP ALIGN=CENTER&gt;
+&lt;COLGROUP ALIGN=CENTER&gt;
+&lt;THEAD&gt;
+&lt;TR&gt;
+&lt;TH COLSPAN=2&gt;Fruits and Vegetables
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD&gt;Apples&lt;TD&gt;Celery
+&lt;TR&gt;
+&lt;TD&gt;Oranges&lt;TD&gt;Carrots
+&lt;/TABLE&gt;
+</FONT></PRE>
+<P>Internet Explorer supports the HTML 3.0 table model. For detailed information about this model, see the document at <A HREF="http://www.w3.org/pub/WWW/TR/WD-tables">http://www.w3.org/pub/WWW/TR/WD-tables</A>. 
+
+<H2><A NAME="htmlref2_0000000001090000">Image Maps</A></H2>
+<P>Image maps allow users to access different documents by clicking different areas in an image. You can implement image maps in two ways: by storing image map information on a server or by including image map information in your document. 
+
+<P>If you store image map information on a server, you need a script or other service on the server to process click information. In your document, you mark the image as a "server-side" image map by using the <A HREF="htmlr000.htm#htmlref2_0000000002002208">ISMAP</A> attribute in the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> tag and enclosing the image in an <A HREF="htmlr000.htm#htmlref2_0000000002000100">A</A> tag, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;A HREF="jump.map"&gt;&lt;IMG SRC="sample.gif" ISMAP&gt;&lt;/A&gt; 
+</FONT></PRE>
+<P>In this example, the image map information is in the file name JUMP.MAP. When the user clicks on the picture SAMPLE.GIF, the server receives the coordinates of the click, and can pick the appropriate destination for the click by checking the information in JUMP.MAP. 
+
+<P>If you include image map information in your document, Internet Explorer processes the click information and picks the appropriate destination for the click. In your document, you mark the image as a "client-side" image map by using the <A HREF="htmlr000.htm#htmlref2_000000000200220c">USEMAP=</A> attribute in the <A HREF="htmlr000.htm#htmlref2_0000000002002200">IMG</A> tag, and you add image map information by using the <A HREF="htmlr000.htm#htmlref2_0000000002002800">MAP</A> and <A HREF="htmlr000.htm#htmlref2_0000000002000300">AREA</A> tags, as in the following example:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;MAP NAME="map1"&gt;
+&lt;AREA SHAPE="RECT" COORDS="0, 0, 16, 16" HREF="sample1.htm"&gt; 
+&lt;AREA SHAPE="RECT" COORDS="16, 0, 16, 16" NOHREF&gt; 
+&lt;AREA SHAPE="RECT" COORDS="0, 16, 16, 16" HREF="sample2.htm"&gt; 
+&lt;AREA SHAPE="RECT" COORDS="16, 16, 16, 16" HREF="sample3.htm"&gt; 
+&lt;/MAP&gt;
+&lt;IMG BORDER=0 SRC="map1.gif" USEMAP="#map1"&gt;
+</FONT></PRE>
+<P>In this example, the image map defines four equal rectangular areas. One area has no corresponding destination, but the other three map to the SAMPLE1.HTM, SAMPLE2.HTM, and SAMPLE3.HTM files, respectively.
+
+<P>The <A HREF="htmlr000.htm#htmlref2_0000000002000300">AREA</A> tag permits other shapes, such as circles and polygons. If two or more shapes overlap, Internet Explorer uses the first shape defined in the <A HREF="htmlr000.htm#htmlref2_0000000002002800">MAP</A> tag to determine the destination. Any number of <A HREF="htmlr000.htm#htmlref2_0000000002000300">AREA</A> can specify the same destination. This is useful if you want to map a complex shape to a single destination. If a portion of the image is not within a given shape, clicking in that portion has no effect. 
+
+<H2><A NAME="htmlref2_00000000010a0000">Forms</A></H2>
+<P>Forms provide a way to prompt the user for information and to carry out actions based on that input. A form consists of one or more input controls that the user uses to enter text and makes choices. Once the user provides the input, the form collects the information and sends it to a specified destination on a server. To carry out the requested action, the server must have a script or other service that corresponds to the given destination. This script processes the information and carries out any actions.
+
+<P>To create a form, you use the <A HREF="htmlr000.htm#htmlref2_0000000002001a00">FORM</A> tag to enclose one or more <A HREF="htmlr000.htm#htmlref2_0000000002002300">INPUT</A> tags. The <A HREF="htmlr000.htm#htmlref2_0000000002001a00">FORM</A> tag specifies the action to take when the user has provided the information. The <A HREF="htmlr000.htm#htmlref2_0000000002002300">INPUT</A> tags define the type and function of the input controls in the form. The following example shows how to combine these tags to create a form:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;FORM ACTION="http://intranet/survey" METHOD=POST&gt;
+&lt;P&gt;Name
+&lt;BR&gt;&lt;INPUT NAME="CONTROL1" TYPE=TEXTBOX VALUE="Your Name"&gt;
+&lt;P&gt;Password
+&lt;BR&gt;&lt;INPUT TYPE="PASSWORD" NAME="CONTROL2"&gt;
+&lt;P&gt;Color
+&lt;BR&gt;&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="0" CHECKED&gt;Red
+&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="1"&gt;Green
+&lt;INPUT TYPE="RADIO" NAME="CONTROL3" VALUE="2"&gt;Blue
+&lt;P&gt;Comments
+&lt;BR&gt;&lt;INPUT TYPE="TEXTAREA" NAME="CONTROL4" SIZE="20,5" MAXLENGTH="250"&gt;
+&lt;P&gt;&lt;INPUT NAME="CONTROL5" TYPE=CHECKBOX CHECKED&gt;Send receipt
+&lt;P&gt;&lt;INPUT TYPE="SUBMIT" VALUE="OK"&gt;&lt;INPUT TYPE="RESET" VALUE="Reset"&gt;
+&lt;/FORM&gt;
+</FONT></PRE>
+<H2><A NAME="htmlref2_00000000010b0000">Objects</A></H2>
+<P>Internet Explorer supports objects according to the HTML 3.0 object model. Objects add functionality to your HTML document by letting you insert images, video, and programs, such as JAVA and ActiveX controls. 
+
+<P>To insert an object, you use the <A HREF="htmlr000.htm#htmlref2_0000000002002e00">OBJECT</A> tag, supplying attribute values that specify the object type, location, initial data, and so on. If the object has settable properties, you can set these using the <A HREF="htmlr000.htm#htmlref2_0000000002003200">PARAM</A> tag. The following example shows how to insert the marquee ActiveX control and fill it with content:
+
+<PRE><FONT FACE="Courier" SIZE="2">&lt;OBJECT
+ALIGN=CENTER CLASSID="clsid:1a4da620-6217-11cf-be62-0080c72edd2d"
+WIDTH=200 HEIGHT=200 BORDER=1 HSPACE=5
+ID=marquee&gt;
+&lt;PARAM NAME="ScrollStyleX" VALUE="Circular"&gt;
+&lt;PARAM NAME="ScrollStyleY" VALUE="Circular"&gt;
+&lt;PARAM NAME="szURL" VALUE="marqcont.htm"&gt;
+&lt;PARAM NAME="ScrollDelay" VALUE=60&gt;
+&lt;PARAM NAME="LoopsX" VALUE=-1&gt;
+&lt;PARAM NAME="LoopsY" VALUE=-1&gt;
+&lt;PARAM NAME="ScrollPixelsX" VALUE=0&gt;
+&lt;PARAM NAME="ScrollPixelsY" VALUE=-3&gt;
+&lt;PARAM NAME="DrawImmediately" VALUE=0&gt;
+&lt;PARAM NAME="Whitespace" VALUE=0&gt;
+&lt;PARAM NAME="PageFlippingOn" VALUE=0&gt;
+&lt;PARAM NAME="Zoom" VALUE=100&gt;
+&lt;PARAM NAME="WidthOfPage" VALUE=400&gt;
+&lt;/OBJECT&gt;
+</FONT></PRE>
+<P>In this example, the <A HREF="htmlr000.htm#htmlref2_0000000002002e00">OBJECT</A> tag specifies the class identifier of the control (assumed to be already installed and registered) and the alignment, width, height, and other attributes of the control. The series of <A HREF="htmlr000.htm#htmlref2_0000000002003200">PARAM</A> tags sets the values for the individual properties of the control, determining how and when the contents are scrolled. The "szURL" property determines which HTML document is used as content. 
+
+<P>A matching end tag is required for each <A HREF="htmlr000.htm#htmlref2_0000000002002e00">OBJECT</A> tag. Within these tags, you may place one or more <A HREF="htmlr000.htm#htmlref2_0000000002003200">PARAM</A> tags. You can also place any tags and text that you would ordinarily use in the body of the HTML document, but these tags and text are not processed and displayed unless the HTML viewer does not process the <A HREF="htmlr000.htm#htmlref2_0000000002002e00">OBJECT</A> tag.
+
+<P>For detailed information about the HTML 3.0 object model, see the document at <A HREF="http://www.w3.org/pub/WWW/TR/WD-object.html">http://www.w3.org/pub/WWW/TR/WD-object.html</A>.
+
+<H2><A NAME="htmlref2_00000000010c0000">Client Pull</A></H2>
+<P>Client pull provides the ability to automatically load a new document in the specified time or reload a document on a regular basis. Internet Explorer supports client pull using the <A HREF="htmlr000.htm#htmlref2_0000000002002b00">META</A> tag. The <A HREF="htmlr000.htm#htmlref2_0000000002002b00">META</A> tag must be inside the <A HREF="htmlr000.htm#htmlref2_0000000002001e00">HEAD</A> tag of the HTML document. 
+
+
+<H2><A NAME="htmlref2_00000000010d0000">Character Set</A></H2>
+<P>This following information is described here:
+
+<UL><LI>ISO Latin-1 Character Set 
+<LI>Complete Character Set
+</UL>
+<H3><A NAME="htmlref2_00000000010d0100">ISO Latin-1 Character Set</A></H3>
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Character</B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>HTML</B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Alternate HTML</B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Explanation
+</B></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#192;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#192;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Agrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#224;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#224;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;agrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#193;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#193;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Aacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#225;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#225;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;aacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#194;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#194;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Acirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#226;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#226;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;acirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#195;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#195;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Atilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#227;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#227;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;atilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#196;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#196;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Auml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#228;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#228;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;auml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#197;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#197;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Aring;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, ring
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#229;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#229;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;aring;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, ring
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#198;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#198;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;AElig;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital AE ligature
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#230;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#230;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;aelig;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small ae ligature
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#199;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#199;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ccedil;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital C, cedilla
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#231;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#231;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ccedil;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small c, cedilla
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#200;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#200;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Egrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#232;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#232;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;egrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#201;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#201;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Eacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#233;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#233;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;eacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#202;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#202;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ecirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#234;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#234;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ecirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#203;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#203;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Euml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#235;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#235;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;euml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#204;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#204;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Igrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#236;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#236;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;igrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#205;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#205;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Iacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#237;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#237;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;iacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#206;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#206;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Icirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#238;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#238;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;icirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#207;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#207;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Iuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#239;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#239;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;iuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#208;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#208;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ETH;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Eth, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#240;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#240;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;eth;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small eth, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#209;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#209;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ntilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital N, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#241;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#241;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ntilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small n, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#210;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#210;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ograve;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#242;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#242;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ograve;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#211;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#211;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Oacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#243;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#243;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;oacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#212;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#212;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ocirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#244;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#244;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ocirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#213;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#213;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Otilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#245;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#245;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;otilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#214;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#214;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ouml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#246;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#246;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ouml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#216;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#216;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Oslash;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, slash
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#248;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#248;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;oslash;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, slash
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#217;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#217;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ugrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#249;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#249;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ugrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#218;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#218;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Uacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#250;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#250;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;uacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#219;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#219;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ucirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#251;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#251;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ucirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#220;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#220;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Uuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#252;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#252;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;uuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#221;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#221;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Yacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Y, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#253;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#253;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;yacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small y, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#222;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#222;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;THORN;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Thorn, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#254;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#254;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;thorn;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small thorn, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#223;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#223;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;szlig;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small sharp s, German sz
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#255;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#255;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;yuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small y, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+</TABLE>
+<H3><A NAME="htmlref2_00000000010d0200">Complete Character Set</A></H3>
+<P>This is the complete character set for Internet Explorer 2.0 English (US.) 
+
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Character</B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>HTML</B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Alternate HTML</B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Explanation
+</B></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#00; - &amp;#08;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Unused
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#09;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Horizontal tab
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#10;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Line feed
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#11; - &amp;#12;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Unused
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#13;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Carriage Return
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#14; - &amp;#31;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Unused
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#032;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#32;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Space
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#033;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#33;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Exclamation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#034;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#34;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;quot;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Quotation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#035;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#35;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Number sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#036;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#36;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Dollar sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#037;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#37;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Percent sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#38;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;amp;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Ampersand
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#039;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#39;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Apostrophe
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#040;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#40;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Left parenthesis
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#041;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#41;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Right parenthesis
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#042;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#42;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Asterisk
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#043;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#43;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Plus sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#044;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#44;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Comma
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#045;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#45;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Hyphen
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#046;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#46;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Period (fullstop)
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#047;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#47;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Solidus (slash)
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#048;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#48;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 0
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#049;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#49;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 1
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#050;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#50;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#051;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#51;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#052;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#52;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 4
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#053;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#53;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 5
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#054;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#54;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 6
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#055;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#55;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 7
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#056;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#56;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 8
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#057;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#57;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Digit 9
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#058;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#58;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Colon
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#059;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#59;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Semi-colon
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#060;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#60;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;lt;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Less than
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#061;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#61;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Equals sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#062;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#62;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;gt;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Greater than
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#063;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#63;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Question mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#064;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#64;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Commercial at
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#065;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#65;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#066;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#66;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital B
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#067;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#67;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital C
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#068;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#68;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital D
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#069;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#69;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#070;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#70;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital F
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#071;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#71;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital G
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#072;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#72;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital H
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#073;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#73;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#074;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#74;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital J
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#075;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#75;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital K
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#076;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#76;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital L
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#077;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#77;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital M
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#078;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#78;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital N
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#079;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#79;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#080;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#80;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital P
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#081;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#81;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Q
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#082;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#82;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital R
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#083;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#83;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital S
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#084;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#84;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital T
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#085;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#85;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#086;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#86;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital V
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#087;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#87;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital W
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#088;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#88;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital X
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#089;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#89;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Y
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#090;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#90;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Z
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#091;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#91;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Left square bracket
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#092;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#92;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Reverse solidus (backslash)
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#093;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#93;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Right square bracket
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#094;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#94;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Caret
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#095;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#95;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Horizontal bar (underscore)
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#096;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#96;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#097;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#97;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#098;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#98;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small b
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#099;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#99;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small c
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#100;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#100;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small d
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#101;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#101;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#102;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#102;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small f
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#103;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#103;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small g
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#104;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#104;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small h
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#105;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#105;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#106;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#106;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small j
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#107;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#107;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small k
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#108;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#108;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small l
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#109;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#109;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small m
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#110;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#110;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small n
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#111;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#111;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#112;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#112;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small p
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#113;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#113;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small q
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#114;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#114;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small r
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#115;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#115;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small s
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#116;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#116;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small t
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#117;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#117;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#118;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#118;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small v
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#119;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#119;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small w
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#120;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#120;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small x
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#121;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#121;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small y
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#122;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#122;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small z
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#123;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#123;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Left curly brace
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#124;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#124;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Vertical bar
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#125;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#125;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Right curly brace
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#126;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#126;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#127; - &amp;#129;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Unused
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#130;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#130;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Low single comma quotation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#131;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#131;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Function sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#132;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#132;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Low double comma quotation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#133;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#133;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Ellipses
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#134;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#134;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Dagger
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#135;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#135;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Double dagger
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#136;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#136;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Caret
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#137;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#137;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Per mile sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#138;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#138;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital S Hacek
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#139;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#139;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Less-than sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#140;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#140;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital OE ligature
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#141; - &amp;#144;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Unused
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#145;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#145;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Single beginning quotation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#146;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#146;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Single ending quotation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#147;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#147;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Double beginning quotation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#148;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#148;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Double ending quotation mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#149;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#149;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Dot, middle
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#150;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#150;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">En dash
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#151;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#151;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Em dash
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#152;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#152;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#153;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#153;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Trademark symbol
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#154;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#154;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small s Hacek
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#155;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#155;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Greater-than sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#156;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#156;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small oe ligature
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#157; - &amp;#158;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Unused
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#159;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#159;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Y, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#160;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#160;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;nbsp;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Non-breaking Space
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#161;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#161;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Inverted exclamation
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#162;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#162;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Cent sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#163;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#163;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Pound sterling
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#164;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#164;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">General currency sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#165;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#165;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Yen sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#166;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#166;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Broken vertical bar
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#167;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#167;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Section sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#168;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#168;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Di&#230;resis / Umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#169;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#169;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Copyright
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#170;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#170;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Feminine ordinal
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#171;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#171;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Left angle quote, guillemot left
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#172;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#172;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Not sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#173;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#173;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;shy;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Soft hyphen
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#174;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#174;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Registered trademark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#175;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#175;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Macron accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#176;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#176;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Degree sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#177;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#177;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Plus or minus
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#178;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#178;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Superscript two
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#179;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#179;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Superscript three
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#180;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#180;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#181;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#181;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Micro sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#182;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#182;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Paragraph sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#183;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#183;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Middle dot
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#184;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#184;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Cedilla
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#185;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#185;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Superscript one
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#186;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#186;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Masculine ordinal
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#187;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#187;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Right angle quote, guillemot right
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#188;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#188;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Fraction one-fourth
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#189;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#189;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Fraction one-half
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#190;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#190;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Fraction three-fourths
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#191;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#191;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Inverted question mark
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#192;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#192;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Agrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#193;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#193;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Aacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#194;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#194;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Acirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#195;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#195;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Atilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#196;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#196;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Auml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#197;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#197;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Aring;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital A, ring
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#198;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#198;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;AElig;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital AE ligature
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#199;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#199;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ccedil;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital C, cedilla
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#200;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#200;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Egrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#201;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#201;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Eacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#202;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#202;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ecirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#203;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#203;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Euml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital E, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#204;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#204;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Igrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#205;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#205;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Iacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#206;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#206;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Icirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#207;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#207;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Iuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital I, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#208;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#208;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ETH;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Eth, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#209;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#209;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ntilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital N, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#210;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#210;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ograve;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#211;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#211;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Oacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#212;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#212;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ocirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#213;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#213;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Otilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#214;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#214;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ouml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#215;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#215;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Multiply sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#216;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#216;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Oslash;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital O, slash
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#217;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#217;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ugrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#218;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#218;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Uacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#219;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#219;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Ucirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#220;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#220;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Uuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital U, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#221;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#221;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;Yacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Y, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#222;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#222;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;THORN;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Capital Thorn, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#223;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#223;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;szlig;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small sharp s, German sz
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#224;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#224;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;agrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#225;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#225;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;aacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#226;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#226;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;acirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#227;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#227;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;atilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#228;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#228;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;auml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#229;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#229;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;aring;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small a, ring
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#230;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#230;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;aelig;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small ae ligature
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#231;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#231;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ccedil;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small c, cedilla
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#232;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#232;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;egrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#233;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#233;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;eacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#234;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#234;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ecirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#235;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#235;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;euml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small e, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#236;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#236;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;igrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#237;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#237;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;iacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#238;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#238;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;icirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#239;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#239;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;iuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small i, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#240;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#240;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;eth;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small eth, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#241;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#241;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ntilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small n, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#242;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#242;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ograve;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#243;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#243;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;oacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#244;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#244;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ocirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#245;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#245;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;otilde;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, tilde
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#246;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#246;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ouml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#247;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#247;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Division sign
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#248;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#248;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;oslash;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small o, slash
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#249;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#249;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ugrave;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, grave accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#250;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#250;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;uacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#251;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#251;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;ucirc;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, circumflex
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#252;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#252;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;uuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small u, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#253;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#253;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;yacute;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small y, acute accent
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#254;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#254;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;thorn;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small thorn, Icelandic
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&#255;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;#255;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">&amp;yuml;</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Small y, di&#230;resis / umlaut
+</FONT></TD>
+</TR>
+</TABLE>
+<H2><A NAME="htmlref2_00000000010e0000">Compatibility</A></H2>
+<P>The following table lists the tags and attributes supported by Internet Explorer 3.0 and identifies either the first version of the HTML specification in which a tag or attribute is defined or the name of the HTML viewer in which the tags or attribute first appeared. 
+
+<TABLE BORDER=0>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Tag </B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Attribute </B></FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"><B>Compatible With
+</B></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">A </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">A </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HREF </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">A </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">A </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TARGET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ADDRESS </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">AREA </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">AREA </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COORDS </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">AREA </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HREF </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">AREA </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NOHREF </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">AREA </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SHAPE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">AREA </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TARGET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">B </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BASE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BASE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HREF </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BASE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TARGET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BASEFONT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BASEFONT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SIZE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGSOUND </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGSOUND </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LOOP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGSOUND </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SRC </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BIG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BLOCKQUOTE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BACKGROUND </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGPROPERTIES </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 2.0
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LEFTMARGIN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 2.0
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LINK </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TEXT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TOPMARGIN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 2.0
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VLINK </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CLEAR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CAPTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CAPTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CENTER </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CITE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CODE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SPAN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COLGROUP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COLGROUP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COLGROUP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COMMENT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">DD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">DFN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">DIR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">DL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">DT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">EM </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FONT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FONT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FONT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FACE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FONT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SIZE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FORM </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FORM </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ACTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FORM </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">METHOD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FORM </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TARGET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMEBORDER </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARGINHEIGHT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARGINWIDTH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NORESIZE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SCROLLING </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SRC </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMESET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMESET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COLS </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMESET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMEBORDER </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMESET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMESPACING </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAMESET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ROWS </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">H<I>n</I> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">H<I>n</I> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">COLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NOSHADE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SIZE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">WIDTH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">I </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDER </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CONTROLS </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">DYNSRC </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HEIGHT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HSPACE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ISMAP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LOOP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SRC </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">START </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">USEMAP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VSPACE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IMG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">WIDTH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CHECKED </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MAXLENGTH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SIZE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SRC </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=CHECKBOX </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=HIDDEN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=IMAGE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=PASSWORD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=RADIO </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=RESET </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=SUBMIT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=TEXT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE=TEXTAREA </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">INPUT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VALUE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ISINDEX </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ISINDEX </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ACTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ISINDEX </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">PROMPT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">KBD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LI </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LI </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LI </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VALUE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LISTING </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MAP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MAP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BEHAVIOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">DIRECTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HEIGHT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HSPACE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">LOOP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SCROLLAMOUNT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SCROLLDELAY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VSPACE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MARQUEE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">WIDTH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MENU </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">META </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">META </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">CONTENT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">META </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTTP-EQUIV </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NOBR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NOFRAMES </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">OL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">OL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">START </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">OL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TYPE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">OPTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">OPTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SELECTED </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">OPTION </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VALUE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">P </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">P </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">PLAINTEXT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">PRE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">S </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SAMP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SELECT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SELECT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">MULTIPLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SELECT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">NAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SELECT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SIZE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SMALL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">STRIKE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">STRONG </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SUB </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">SUP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BACKGROUND </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORDARK </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORLIGHT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">FRAME </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TABLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">RULES </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TBODY </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORDARK </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORLIGHT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TFOOT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORDARK </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORLIGHT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TH </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">THEAD </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TITLE </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"></FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">ALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 3
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BGCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLOR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORDARK </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">BORDERCOLORLIGHT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VALIGN </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">IExplore
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">TT </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">U </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">UL </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">VAR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">WBR </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">Netscape 
+</FONT></TD>
+</TR>
+<TR><TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">XMP </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2"> </FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP><FONT FACE="arial" SIZE="2">HTML 2 
+</FONT></TD>
+</TR>
+</TABLE>
+<HR><CENTER>
+<A HREF="index.htm">[Index]</A>
+<A HREF="htmlr000.htm">[Next]</A>
+</CENTER>
+</BLOCKQUOTE></FONT>
+</BODY></HTML>

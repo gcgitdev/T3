@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<printOrder id="1299683641588">
+    <notifications>
+        <appointments>
+            <appointment>
+                <apptType>Yearly Checkup</apptType>
+                <apptDate>09/15/2008</apptDate>
+                <owner>
+                    <firstName>Joe</firstName>
+                    <lastName>Outdoors</lastName>
+                    <address>
+                        <addressLine1>123 Whitewater Street</addressLine1>
+                        <city>OurTown</city>
+                        <state>CA</state>
+                        <zip>90347</zip>
+                        <zipExt>1234</zipExt>
+                    </address>
+                </owner>
+                <pet>
+                    <name>Honcho</name>
+                    <species>Dog</species>
+                </pet>
+            </appointment>
+            <appointment>
+                <apptType>Well Mom Exam</apptType>
+                <apptDate>09/12/2008</apptDate>
+                <owner>
+                    <firstName>Missy</firstName>
+                    <lastName>Fairchild</lastName>
+                    <address>
+                        <addressLine1>456 Scenic Drive</addressLine1>
+                        <city>West OurTown</city>
+                        <state>CA</state>
+                        <zip>90349</zip>
+                        <zipExt>6789</zipExt>
+                    </address>
+                </owner>
+                <pet>
+                    <name>Miss Kitty</name>
+                    <species>Cat</species>
+                </pet>
+            </appointment>
+        </appointments>
+        <birthdays>
+            <birthday>
+                <age>10</age>
+                <birthday>09/07/2000</birthday>
+                <owner>
+                    <firstName>Violet</firstName>
+                    <lastName>Flowers</lastName>
+                    <address>
+                        <addressLine1>22375 Willow Court</addressLine1>
+                        <city>West OurTown</city>
+                        <state>CA</state>
+                        <zip>90349</zip>
+                        <zipExt>6789</zipExt>
+                    </address>
+                </owner>
+                <pet>
+                    <name>Tom</name>
+                    <species>Cat</species>
+                </pet>
+            </birthday>
+        </birthdays>
+    </notifications>
+</printOrder>
